@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio</title>
+<meta name="description" content="" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- decorative background canvas, see js/app.js -> initDnaRain() -->
+<canvas id="dna-rain"></canvas>
+
+<header class="nav">
+  <div class="navbar">
+    <a class="brand" id="brand" href="#top"></a>
+    <ul class="navlinks" id="nav-links"></ul>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="terminal-line">
+      <span class="prompt" id="terminal-user"></span><span>:~$ </span><span id="terminal-cmd"></span><span class="cursor"></span>
+    </div>
+    <div class="terminal-output" id="hero-name"></div>
+    <span class="kicker" id="hero-kicker"></span>
+    <h1 class="headline">
+      <span id="hero-line1"></span><br/>
+      <span class="accent" id="hero-accent"></span><br/>
+      <span id="hero-line2"></span>
+    </h1>
+    <p class="lede" id="hero-lede"></p>
+    <div class="cta-row" id="hero-ctas"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-label" id="about-label"></p>
+      <h2 id="about-heading"></h2>
+    </div>
+    <div class="about-grid reveal">
+      <div id="about-body"></div>
+      <div class="fact-card">
+        <ul class="fact-list" id="about-facts"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-label" id="skills-label"></p>
+      <h2 id="skills-heading"></h2>
+    </div>
+    <div class="skills-grid" id="skills-grid"></div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="section-label" id="projects-label"></p>
+      <h2 id="projects-heading"></h2>
+      <p class="section-sub" id="projects-sub"></p>
+    </div>
+    <div id="projects-list"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <p class="section-label" id="contact-label" style="justify-content:center;"></p>
+      <h2 id="contact-heading"></h2>
+      <p class="section-sub" id="contact-blurb" style="margin-left:auto; margin-right:auto;"></p>
+      <div class="contact-links" id="contact-links"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" id="footer-text"></div>
+</footer>
+
+<!-- content.js holds everything you'd want to edit; app.js just renders it -->
+<script src="js/content.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
