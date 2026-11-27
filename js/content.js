@@ -69,7 +69,7 @@ const CONTENT = {
       { label: "education",  value: "MS Quantitative Biology & Bioinformatics, CMU" },
       { label: "graduating", value: "December 2026" },
       { label: "focus",      value: "genomics · cancer biology · applied ML" },
-      { label: "current thesis", value: "GBM spatial transcriptomics, Schwartz Lab" },
+      { label: "MS thesis",  value: "GBM spatial transcriptomics, Schwartz Lab · defended Nov 2026" },
       { label: "email",      value: "arun03bt@gmail.com", href: "mailto:arun03bt@gmail.com" },
       { label: "github",     value: "@Arun0364", href: "https://github.com/Arun0364" }
     ]
