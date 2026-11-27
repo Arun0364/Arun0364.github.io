@@ -72,7 +72,7 @@ function renderAbout() {
   document.getElementById("about-heading").textContent = a.heading;
 
   const body = document.getElementById("about-body");
-  a.paragraphs.forEach(p => body.appendChild(el("p", { text: p })));
+  a.paragraphs.forEach(p => body.appendChild(el("p", { html: p })));
 
   const facts = document.getElementById("about-facts");
   a.facts.forEach(f => {
