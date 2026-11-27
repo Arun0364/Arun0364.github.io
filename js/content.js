@@ -44,7 +44,7 @@ const CONTENT = {
   hero: {
     terminalLine: "whoami",
     name: "Arunannamalai (Arun) Sujatha Bharath Raj",
-    kicker: "OPEN_TO: bioinformatics & AI-biology roles · graduating Dec 2026",
+    kicker: "OPEN_TO: bioinformatics & AI-biology roles · graduating Dec 2026 · available Feb 2027",
     headlineLine1: "Building reproducible ML",
     headlineAccent: "pipelines for genomics",
     headlineLine2: "and cancer biology.",
@@ -62,7 +62,7 @@ const CONTENT = {
     paragraphs: [
       "I work at the intersection of computational biology and applied machine learning: building pipelines that turn raw sequencing signal into biological insight, and testing whether ML models trained on genomic data are learning real biology or just an artifact of how the data was collected.",
       "Both projects on this site follow the same discipline: treat a suspiciously good result as a bug report first, not a win. In my cfDNA pipeline, a 100% accuracy score turned out to be a batch effect between two studies; in my genomic foundation model project, the official train/test split had ~94% near-duplicate sequence leakage between negatives. Catching both before publishing the results is the throughline of how I approach this kind of work.",
-      "That same discipline carries into my current thesis research in the Schwartz Lab at CMU, where I'm reconstructing clonal lineage in glioblastoma from spatial transcriptomics data: combining archetypal analysis to identify pure transcriptional cell states, deconvolution to decompose each spatial spot into fractional state contributions, and phylogenetic inference to relate those states to one another. It's still in progress, so it isn't written up as a project here yet, but it's the same underlying question as everything else on this site: does a strong-looking result reflect real spatial and biological structure, or an artifact of the method.",
+      "That same discipline carries into my current thesis research in the Schwartz Lab at CMU, where I'm reconstructing clonal lineage in glioblastoma from spatial transcriptomics data: combining archetypal analysis to identify pure transcriptional cell states, deconvolution to decompose each spatial spot into fractional state contributions, and phylogenetic inference to relate those states to one another. The code is public at github.com/Arun0364/gbm-spatial-state-connections, and a full write-up will follow once the thesis is complete.",
       "Currently building toward a portfolio of computational biology work ahead of graduation in December 2026, aiming to contribute to teams applying ML to genomics, oncology, and biomarker discovery."
     ],
     facts: [
@@ -111,7 +111,7 @@ const CONTENT = {
         subtitle: "Detecting cancer signal in cell-free DNA fragmentation patterns",
         description: "A reproducible, containerized pipeline inspired by the DELFI method (Cristiano et al., Nature, 2019). Cancer cells have more disorganized chromatin than healthy cells, producing a measurably higher ratio of short-to-long cfDNA fragments in blood plasma. This pipeline extracts per-chromosome fragment ratios from public FinaleDB data and classifies cancer vs. healthy plasma samples with a random forest.",
         highlightTitle: "Caught a batch effect before trusting the result.",
-        highlight: "An early version scored a suspicious 100% leave-one-out accuracy: the \"cancer\" and \"healthy\" groups turned out to come from two different studies with different lab processing. Re-pulling both groups from the same study dropped accuracy to a more credible 80%, with feature importance concentrating on specific chromosomes instead of spreading uniformly across all 22, a signature of real biological signal, not a processing artifact.",
+        highlight: "An early version scored a suspicious 100% leave-one-out accuracy: the \"cancer\" and \"healthy\" groups turned out to come from two different studies with different lab processing. Re-pulling both groups from the same study dropped accuracy to a more credible 80%, with feature importance concentrating on specific chromosomes instead of spreading uniformly across all 22, consistent with a genuine, if modest, biological signal. With n = 30, this validates the pipeline, not a diagnostic claim.",
         metrics: [
           { value: "0.80",        label: "accuracy (LOOCV)" },
           { value: "0.85 / 0.73", label: "cancer precision / recall" },
