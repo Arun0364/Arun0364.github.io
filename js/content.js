@@ -82,7 +82,7 @@ const CONTENT = {
     categories: [
       {
         name: "programming",
-        items: ["Python", "Pandas", "NumPy", "Biopython", "pysam", "scikit-learn", "PyTorch", "HuggingFace Transformers", "R", "Seurat", "DESeq2", "Bioconductor", "ggplot2", "Bash/Unix", "Git", "SQL"]
+        items: ["Python", "Pandas", "NumPy", "Biopython", "scikit-learn", "PyTorch", "HuggingFace Transformers", "R", "Seurat", "DESeq2", "Bioconductor", "ggplot2", "Bash/Unix", "Git", "SQL"]
       },
       {
         name: "pipeline_infra",
